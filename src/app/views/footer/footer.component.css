@@ -1,0 +1,159 @@
+footer {
+    background-color: #06131D;
+}
+
+.rodape {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.rodape img {
+    height: 45px;
+}
+
+.links-footer {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.links-footer h2 {
+    font-family: 'Titillium Web';
+    font-size: 24px;
+}
+
+.links-footer a {
+    font-family: 'Titillium Web';
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.links-footer a:hover {
+    color: #0d6efd;
+}
+
+.sociais {
+    width: 31%;
+}
+
+.sociais p {
+    font-family: 'Titillium Web';    
+}
+
+.sociais form {
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.sociais input[type="email"]{
+    height: 37px;
+    width: 65%;  
+    border-radius: 0px; 
+    border-style: none; 
+    text-indent: 5px;
+}
+
+.sociais input[type="email"]::placeholder {
+    color: #B8B3B3;
+    font-weight: bold;
+}
+
+.sociais button{
+    width: 35%;
+    color: white;
+    background-color: #001F70;
+    border: none;
+    font-family: 'Titillium Web';
+    font-weight: 600;
+}
+
+.siga-nos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.8em;
+}
+
+.siga-nos img {
+    height: 70px;
+}
+
+.siga-nos h2 {
+    font-family: 'Titillium Web';
+    font-size: 23px;
+}
+
+/* Responsividade para Tablet */
+@media screen and (max-width: 920px) {
+    #logo-rodape {
+        height: 20px;
+    }
+
+    .siga-nos img {
+        height: 50px;
+    }
+
+    .siga-nos h2 {
+        font-family: 'Titillium Web';
+        font-size: 20px;
+    }
+
+    .links-footer {
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sociais {
+        width: 37%;
+    }
+    
+}
+
+/* Responsividade para Celular */
+@media screen and (max-width: 600px) {
+   
+    .rodape {
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+   
+    #logo-rodape {
+       /* display: none; */
+       /* visibility: hidden; */
+    }
+
+    .siga-nos img {
+        height: 50px;
+    }
+
+    .siga-nos h2 {
+        font-family: 'Titillium Web';
+        font-size: 20px;
+       
+    }
+
+    .links-footer {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        /* flex-direction: cen; */
+    }
+
+    .sociais {
+        width: 90%;
+    }
+    
+}
