@@ -12,6 +12,9 @@ import { FooterComponent } from './views/footer/footer.component';
 //Módulo de formulários
 import { FormsModule } from '@angular/forms';
 
+// Módulo cliente HTTP para o Angular
+import { HttpClientModule } from '@angular/common/http'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +28,9 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     NgbModule,
     //Trabalhar com Formulários
-    FormsModule
+    FormsModule,
+    // Declarando como import o Client HTTP
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

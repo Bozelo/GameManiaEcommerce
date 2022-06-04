@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "email": "bozelojr@hotmail.com",
+      "password": "vouserfrontend",
+      "nome": "Jean",
+      "id": 1
+    },
+    {
+      "email": "guga@hotmail.com",
+      "password": "$2a$10$IdgwEIxCo/RBSXJKw69UV.eSleFMfMmMu89SctjaM4CzFQ.eSQa7q",
+      "nome": "Gustavo",
+      "id": 2
+    }
+  ]
+}

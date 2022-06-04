@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/models/user';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,8 @@ import { User } from 'src/app/models/user';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  // Dependencia privada desta classe, funciona apenas aqui.
+  constructor(private loginService: LoginService) { } //Ja sei quem é o service
 
   ngOnInit(): void {
   }
@@ -20,6 +22,11 @@ export class LoginComponent implements OnInit {
     console.log(this.userModel)
 
     //vai enviar os dados para a API
+    this.loginService.login(this.userModel).subscribe( (response) => {
+      console.log("response: ", response)
+    }, (erro) => {
+      console.log(erro)
+    })
 
   }
 
