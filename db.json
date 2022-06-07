@@ -1,15 +1,15 @@
 {
   "users": [
     {
-      "email": "bozelojr@hotmail.com",
-      "password": "vouserfrontend",
+      "email": "bozelojr@email.com",
+      "password": "$2a$10$zoG.tK6ys1CDMhT0sVeNa.Jx.s/Y7L8nY6NkmpEJxzzJD4UXnn27a",
       "nome": "Jean",
       "id": 1
     },
     {
-      "email": "guga@hotmail.com",
-      "password": "$2a$10$IdgwEIxCo/RBSXJKw69UV.eSleFMfMmMu89SctjaM4CzFQ.eSQa7q",
-      "nome": "Gustavo",
+      "email": "Jorge@email.com",
+      "password": "$2a$10$v07hdVrEUCTR15kl1m275OcecKMvI.wz79C.GaCBz2FEc7FvBJhNS",
+      "nome": "Jorge",
       "id": 2
     }
   ]

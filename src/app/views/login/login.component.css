@@ -1,6 +1,20 @@
+.frase {
+    height: 30px;
+    background-color: #040A0F;
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.frase p {
+    color: white;
+    font-size: 20px;
+}
+
 main{
     background-color: #385367;
-    padding: 100px 0;
+    padding: 2px 0;
 
     display: flex;
     flex-direction: column;
@@ -11,13 +25,13 @@ main{
 
 }
 
+
 form {
    
-    width: 40%;
+    width: 80%;
     height: 400px;
     margin: 0 auto;
     padding: 100px 0;
-    background-color: aqua;
 
     display: flex;
     flex-direction: column;
@@ -50,18 +64,63 @@ input, button {
     border: none;
 }
 
-/* p {
-    text-align: end ;
-} */
+/* Responsividade Tablet */
+@media screen and (max-width: 900px) {
 
-/* button{
-    width: 50%;
-    color: white;
-    font-size: 20px;
-    background-color: #226599;
+    .frase p {
+        color: white;
+        font-size: 16px;
+    }
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+
+}
+
+/* Responsividade Celular */
+@media screen and (max-width: 684px) {
+
+    .frase {
+       
+        height: 19px;
+        
+    }
+
+    .frase p {
+        color: white;
+        font-size: 10px;
+    }
+
+}
+
+/* Responsividade Celular- */
+@media screen and (max-width: 400px) {
+
+    .frase {
+       
+        height: 17px;
+        
+    }
+
+    .frase p {
+        color: white;
+        font-size: 9px;
+    }
+
+}
+
+/* Responsividade Celular-- */
+@media screen and (max-width: 320px) {
+
+    .frase {
+       
+        height: 13px;
+        
+    }
+
+    .frase p {
+        color: white;
+        font-size: 7px;
+    }
+
+}
+
 

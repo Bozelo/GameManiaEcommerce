@@ -1,5 +1,13 @@
+<section class="frase">
+    <div>
+        <p>Ola Amigo Gamer, seja bem vindo. Entre e aproveite o que tem de melhor no mundo Gamer.</p>
+    </div>
+</section>
+
 <main>
+   
     <form (ngSubmit)="receberDados()">
+
         <div class="campo-label">
 
              <!-- for ao clicar em Email seleciona a caixa de digitação, muito bom para celular! -->
@@ -23,4 +31,6 @@
        <input id="botao-enviar" type="submit" value="Logar">
 
     </form>
+    <!-- Diretiva, renderização condicional -->
+    <p id="mensagem" *ngIf=" mensagem != '' " >{{ mensagem }}</p> <!-- Binding: Ligação de login.component.ts com login.html {{ mensagem }}-->
 </main>
