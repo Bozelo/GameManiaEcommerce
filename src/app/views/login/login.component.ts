@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { waitForAsync } from '@angular/core/testing';
 import { User } from 'src/app/models/user';
 import { LoginService } from 'src/app/services/login.service';
 
@@ -22,9 +23,20 @@ export class LoginComponent implements OnInit {
   receberDados() {
     console.log(this.userModel)
 
+    //Comandos contra ataques do SQL Injection para proteção do formulário de login.
+    const listaPalavras: string[] = ["select ", "from ", "drop ", "or ", "having ", "group ", "by ", "insert ", "exec ", "\"", "\'", "--", "#", "*", ";" ];
+
+    listaPalavras.forEach(palavra => {
+      if(this.userModel.email?.toLowerCase().includes(palavra)) {
+        this.mensagem = "Proteção contra ataque SQL iniciado..." + "Dados inválidos: " + palavra
+        return;
+      }
+    });
+    //--------------
+
     //vai enviar os dados para a API
     this.loginService.login(this.userModel).subscribe( (response) => {
-      // console.log("response: ", response)
+      
       console.log("O Status Code é: ", response.status)
       console.log("Token de permissão é: ", response.body.accessToken)
 
